@@ -1,0 +1,23 @@
+{
+  "_comment": "Paste the hooks block into ~/.claude/settings.json. Replace <CHIBI_PETS_PATH> with the absolute path to your chibi-pets/ checkout, or generate this file automatically with `python tools/install_hooks.py`.",
+  "hooks": {
+    "UserPromptSubmit": [
+      { "hooks": [ { "type": "command", "command": "python \"<CHIBI_PETS_PATH>/hook/chibi-hook.py\"" } ] }
+    ],
+    "PreToolUse": [
+      { "hooks": [ { "type": "command", "command": "python \"<CHIBI_PETS_PATH>/hook/chibi-hook.py\"" } ] }
+    ],
+    "PostToolUse": [
+      { "hooks": [ { "type": "command", "command": "python \"<CHIBI_PETS_PATH>/hook/chibi-hook.py\"" } ] }
+    ],
+    "SubagentStop": [
+      { "hooks": [ { "type": "command", "command": "python \"<CHIBI_PETS_PATH>/hook/chibi-hook.py\"" } ] }
+    ],
+    "Stop": [
+      { "hooks": [ { "type": "command", "command": "python \"<CHIBI_PETS_PATH>/hook/chibi-hook.py\"" } ] }
+    ],
+    "Notification": [
+      { "hooks": [ { "type": "command", "command": "python \"<CHIBI_PETS_PATH>/hook/chibi-hook.py\"" } ] }
+    ]
+  }
+}

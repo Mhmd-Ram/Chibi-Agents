@@ -1,0 +1,22 @@
+{
+  "name": "Ali",
+  "_comment": "Ali chibi (bearded suit). Same 8x9 / 192x208 layout as Alzubair: row 0 idle, 1 running-right, 2 running-left, 3 waving (Artisans flag), 4 jumping, 5 failed(laptop-on-fire-with-extinguisher), 6 waiting, 7 working(laptop), 8 review(notepad).",
+  "sheet": "spritesheet.webp",
+  "frame_width": 192,
+  "frame_height": 208,
+  "fps": 3,
+  "scale": 0.5,
+  "animations": {
+    "idle":      { "frames": [0, 1, 2, 3, 4, 5], "loop": true },
+    "thinking":  { "frames": [56, 57, 58, 59, 60, 61], "loop": true },
+    "reviewing": { "frames": [64, 65, 66, 67, 68, 69], "loop": true },
+    "planning":  { "frames": [64, 65, 66, 67, 68, 69], "loop": true },
+    "writing":   { "frames": [56, 57, 58, 59, 60, 61], "loop": true },
+    "working":   { "frames": [56, 57, 58, 59, 60, 61], "loop": true },
+    "alert":     { "frames": [40, 41, 42, 43, 44, 45, 46, 47], "loop": true },
+    "eating":    { "frames": [48, 49, 50, 51, 52, 53], "loop": true },
+    "sleeping":  { "frames": [0, 1], "loop": true },
+    "spawn_in":  { "frames": [24, 25, 26, 27], "loop": false, "next": "idle" },
+    "spawn_out": { "frames": [27, 26, 25, 24], "loop": false, "despawn": true }
+  }
+}

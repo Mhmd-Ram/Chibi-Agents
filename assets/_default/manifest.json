@@ -1,0 +1,21 @@
+{
+  "name": "Zubair",
+  "_comment": "Default fallback chibi. Same Alzubair sheet until per-agent art exists.",
+  "sheet": "spritesheet.webp",
+  "frame_width": 192,
+  "frame_height": 208,
+  "fps": 3,
+  "scale": 0.5,
+  "animations": {
+    "idle":      { "frames": [0, 1, 2, 3, 4, 5], "loop": true },
+    "thinking":  { "frames": [56, 57, 58, 59, 60, 61], "loop": true },
+    "reviewing": { "frames": [64, 65, 66, 67, 68, 69], "loop": true },
+    "planning":  { "frames": [64, 65, 66, 67, 68, 69], "loop": true },
+    "writing":   { "frames": [56, 57, 58, 59, 60, 61], "loop": true },
+    "working":   { "frames": [56, 57, 58, 59, 60, 61], "loop": true },
+    "alert":     { "frames": [40, 41, 42, 43, 44, 45, 46, 47], "loop": true },
+    "sleeping":  { "frames": [0, 1], "loop": true },
+    "spawn_in":  { "frames": [24, 25, 26, 27], "loop": false, "next": "idle" },
+    "spawn_out": { "frames": [27, 26, 25, 24], "loop": false, "despawn": true }
+  }
+}

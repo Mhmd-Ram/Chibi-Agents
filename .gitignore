@@ -1,0 +1,48 @@
+# Secrets / local config
+.env
+.env.local
+.env.*.local
+
+# Local runtime state (token totals, position, etc.)
+# Note: state.json lives in ~/.chibi-pets/, not in the repo. Listed here as a
+# safety net in case someone copies it into the project.
+state.json
+hook-debug.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+
+# Test / type checker / coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS detritus
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local virtual envs
+.venv/
+venv/
+env/
